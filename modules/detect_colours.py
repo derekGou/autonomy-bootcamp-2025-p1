@@ -52,8 +52,8 @@ class DetectBlue:
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
         # Set upper and lower bounds for colour detection, this is in HSV
-        lower_blue = np.array([90,60,30])
-        upper_blue = np.array([130,255,255])
+        lower_blue = np.array([90, 60, 30])
+        upper_blue = np.array([130, 255, 255])
 
         # Apply the threshold for the colour detection
         mask = cv2.inRange(hsv, lower_blue, upper_blue)
